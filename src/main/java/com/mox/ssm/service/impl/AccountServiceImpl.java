@@ -3,16 +3,9 @@ package com.mox.ssm.service.impl;
 import com.mox.ssm.domain.Account;
 import com.mox.ssm.mapper.AccountMapper;
 import com.mox.ssm.service.AccountService;
-import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 
 /**
@@ -34,7 +27,7 @@ public class AccountServiceImpl implements AccountService {
     //查找所有 的用户
     @Override
     public List<Account> findAll() {
-        List<Account> all = accountMapper.findAll();
-        return all;
+
+        return accountMapper.findAll();
     }
 }
