@@ -31,7 +31,7 @@ public class AccountServiceImpl implements AccountService {
     public void save(Account account) {
         accountMapper.save(account);
     }
-
+    //查找所有 的用户
     @Override
     public List<Account> findAll() {
         List<Account> all = accountMapper.findAll();
